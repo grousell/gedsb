@@ -1,9 +1,9 @@
 #' GEDSB ggplot2 Theme for Flipped Bar Charts
 #'
-#' @return
+#' @return Sets gglot2 theme for flipped bar charts
 #' @export
 #'
-#' @examples
+#' @examples gedsb_flipped_bar_plot_theme()
 gedsb_flipped_bar_plot_theme <- function () {
 
 

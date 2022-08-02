@@ -6,6 +6,12 @@
 \usage{
 gedsb_bar_plot_theme()
 }
+\value{
+Sets gglot2 theme
+}
 \description{
 GEDSB ggplot2 Theme for Bar Charts
+}
+\examples{
+gedsb_bar_plot_theme()
 }

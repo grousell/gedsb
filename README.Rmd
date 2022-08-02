@@ -1,0 +1,75 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# gedsb
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of the `gedsb` package is to provide the visual identity ggplot2 theme for charts and tables. 
+
+## Installation
+
+You can install the development version of gedsb from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("grousell/gedsb")
+```
+
+## Example
+
+By loading the package the theme is automatically set. 
+
+```{r example}
+library(gedsb)
+library (ggplot2)
+library (dplyr)
+
+basic_plot <- mtcars |>
+  group_by (cyl) |>
+  count () |>
+  mutate (cyl = factor (cyl)) |>
+  ggplot(aes (x = cyl, y = n)) +
+  geom_col() + 
+  labs(
+    title = "Numnber of Cars by Cylinders",
+    x = "Cylinders",
+    y = "Number of Cars"
+  ) 
+
+basic_plot
+
+```
+
+GEDSB colors are automatically loaded as well. 
+
+```{r}
+plot_colored <- mtcars |>
+  group_by (cyl) |>
+  count () |>
+  mutate (cyl = factor (cyl)) |>
+  ggplot(ggplot2::aes (x = cyl, y = n)) +
+  geom_col(fill = gedsb_colours("Blue")) + # Colour added here
+  labs(
+    title = "Numnber of Cars by Cylinders",
+    x = "Cylinders",
+    y = "Number of Cars"
+  ) 
+
+plot_colored
+
+```
+

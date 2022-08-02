@@ -1,13 +1,12 @@
 
-
 # Theme for ggplots using board colours ----------------------------------
 
 #' GEDSB ggplot2 Theme for Bar Charts
 #'
-#' @return
+#' @return Sets gglot2 theme
 #' @export
 #'
-#' @examples
+#' @examples gedsb_bar_plot_theme()
 gedsb_bar_plot_theme <- function () {
 
 

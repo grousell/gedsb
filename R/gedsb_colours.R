@@ -1,18 +1,41 @@
 
-# gedbs colours_fonts -----------------------------------------------------
+gedsb_cols = c(
+  Green = "#8dc63f",
+  Green2 = "#afd778",
+  Green3 = "#d1e8b2",
 
-extrafont::loadfonts(device = "win")
+  Blue = "#0089cf",
+  Blue2 = "#4cacdd",
+  Blue3 = "#99cfeb",
+
+  Orange = "#faa61a",
+  Orange2 = "#fbc05e",
+  Orange3 = "fddba3"
+)
 
 
-gedsbGreen <- "#8dc63f"
-gedsbGreen2 <- "#afd778"
-gedsbGreen3 <- "#d1e8b2"
+#' gedsb_colours
+#'
+#' @param cols
+#'
+#' @return Hex colour for GEDSB visual identity
+#' @export
+#'
+#' @examples gedsb_colours("Blue")
+gedsb_colours <- function(...) {
+  cols <- c(...)
 
-gedsbBlue <- "#0089cf"
-gedsbBlue2 <- "#4cacdd"
-gedsbBlue3 <- "#99cfeb"
+  if (is.null(cols))
+    return (gedsb_cols)
 
-gedsbOrange <- "#faa61a"
-gedsbOrange2 <- "#fbc05e"
-gedsbOrange3 <- "fddba3"
+  gedsb_cols[cols]
+}
+
+
+# extrafont::loadfonts(device = "win")
+
+
+
+
+
 

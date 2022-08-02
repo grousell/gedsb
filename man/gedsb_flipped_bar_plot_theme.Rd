@@ -6,6 +6,12 @@
 \usage{
 gedsb_flipped_bar_plot_theme()
 }
+\value{
+Sets gglot2 theme for flipped bar charts
+}
 \description{
 GEDSB ggplot2 Theme for Flipped Bar Charts
+}
+\examples{
+gedsb_flipped_bar_plot_theme()
 }
