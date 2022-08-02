@@ -9,7 +9,6 @@
 #' @examples gedsb_bar_plot_theme()
 gedsb_bar_plot_theme <- function () {
 
-
   font <- "Montserrat"
 
   ggplot2::theme(

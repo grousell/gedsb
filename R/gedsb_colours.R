@@ -32,7 +32,7 @@ gedsb_colours <- function(...) {
 }
 
 
-# extrafont::loadfonts(device = "win")
+
 
 
 
