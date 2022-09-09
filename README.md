@@ -45,7 +45,7 @@ basic_plot <- mtcars |>
   ggplot(aes (x = cyl, y = n)) +
   geom_col() + 
   labs(
-    title = "Numnber of Cars by Cylinders",
+    title = "Number of Cars by Cylinders",
     x = "Cylinders",
     y = "Number of Cars"
   ) 
