@@ -1,0 +1,47 @@
+
+
+#' GEDSB Summary Table
+#'
+#' This function will create a one or two variable summary table with percentages
+#' @param
+#' df
+#' @param
+#' group_1
+#' @param
+#' group_2
+#' @param ...
+#'
+#' @return [A tibble][tibble::tibble-package] with columns for `group_1`, `group_2`,
+#' `n` and `perc`
+#' @export
+#'
+#' @examples
+#' dat <- palmerpenguins::penguins
+#' gedsb_summary_table (dat, species)
+#' gedsb_summary_table (dat, species, sex)
+#'
+gedsb_summary_table <- function (df, group_1, group_2, ...){
+
+  args <- match.call ()
+  exist <- ("group_2" %in% names (args))
+
+  tbl <- df |>
+    dplyr::group_by({{group_1}}, {{group_2}}) |>
+    dplyr::count ()
+
+  if (exist == TRUE) {
+    tbl |>
+      dplyr::group_by ({{group_1}}) |>
+        dplyr::mutate (perc = n / sum (n))}
+  else {
+    tbl |>
+    dplyr::ungroup() |>
+      dplyr::mutate(perc = n / sum(n))
+  }
+}
+
+# gedsb_summary_table (dat, species)
+# gedsb_summary_table (dat, species, sex)
+# gedsb_summary_table (dat |>
+#                        tidyr::drop_na(sex),
+#                      species, sex)
