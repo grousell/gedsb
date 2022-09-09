@@ -1,5 +1,3 @@
-
-
 #' GEDSB Summary Table
 #'
 #' This function will create a one or two variable summary table with percentages
@@ -40,8 +38,4 @@ gedsb_summary_table <- function (df, group_1, group_2, ...){
   }
 }
 
-# gedsb_summary_table (dat, species)
-# gedsb_summary_table (dat, species, sex)
-# gedsb_summary_table (dat |>
-#                        tidyr::drop_na(sex),
-#                      species, sex)
+
