@@ -65,7 +65,7 @@ plot_colored <- mtcars |>
   ggplot(ggplot2::aes (x = cyl, y = n)) +
   geom_col(fill = gedsb_colours("Blue")) + # Colour added here
   labs(
-    title = "Numnber of Cars by Cylinders",
+    title = "Number of Cars by Cylinders",
     x = "Cylinders",
     y = "Number of Cars"
   ) 
