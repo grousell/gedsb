@@ -16,7 +16,7 @@ gedsb_summary_table(df, group_1, group_2, ...)
 \item{...}{}
 }
 \value{
-\link[tibble:tibble-package]{tibble} with columns \code{group_1}, \code{group_2},
+\link[tibble:tibble-package]{A tibble} with columns for \code{group_1}, \code{group_2},
 \code{n} and \code{perc}
 }
 \description{
