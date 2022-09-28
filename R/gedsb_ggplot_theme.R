@@ -12,7 +12,8 @@ gedsb_bar_plot_theme <- function () {
   font <- "Montserrat"
 
   ggplot2::theme(
-  title = ggplot2::element_text (colour = "black", size = 10),
+  title = ggplot2::element_text (colour = "black", size = 14),
+  plot.title.position = "plot",
   text = ggplot2::element_text(size = 12,  family = "Montserrat"),
 
   plot.title = ggplot2::element_text(hjust = 0.5),

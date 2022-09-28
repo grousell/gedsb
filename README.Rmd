@@ -52,22 +52,28 @@ basic_plot <- mtcars |>
 
 basic_plot
 
+basic_plot + 
+  gedsb_bar_plot_theme()
+
 ```
 
-GEDSB colors are automatically loaded as well. 
+GEDSB colors and fonts are loaded with the `gedsb_colours_fonts` function. 
 
 ```{r}
+gedsb_colours_fonts()
+
 plot_colored <- mtcars |>
   group_by (cyl) |>
   count () |>
   mutate (cyl = factor (cyl)) |>
   ggplot(ggplot2::aes (x = cyl, y = n)) +
-  geom_col(fill = gedsb_colours("Blue")) + # Colour added here
+  geom_col(fill = gedsbBlue) + # Colour added here
   labs(
     title = "Number of Cars by Cylinders",
     x = "Cylinders",
     y = "Number of Cars"
-  ) 
+  ) +
+  gedsb_bar_plot_theme()
 
 plot_colored
 

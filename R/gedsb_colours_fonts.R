@@ -24,6 +24,8 @@ gedsb_colours_fonts <- function (...){
   gedsbOrange2 <<- "#fbc05e"
   gedsbOrange3 <<- "fddba3"
 
+  gedsbFont <<- "Montserrat"
+
   extrafont::loadfonts(device="win")
 }
 
