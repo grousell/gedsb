@@ -22,7 +22,7 @@ gedsb_colours_fonts <- function (...){
 
   gedsbOrange <<- "#faa61a"
   gedsbOrange2 <<- "#fbc05e"
-  gedsbOrange3 <<- "fddba3"
+  gedsbOrange3 <<- "#fddba3"
 
   gedsbFont <<- "Montserrat"
 
