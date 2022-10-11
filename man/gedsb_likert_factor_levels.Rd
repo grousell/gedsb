@@ -7,7 +7,7 @@
 gedsb_likert_factor_levels(x)
 }
 \arguments{
-\item{...}{}
+\item{x}{}
 }
 \value{
 Vector of factor, with levels "Strongly Disagree", "Disagree", "Neither Agree or Disagree", "Agree", "Strongly Agree"
@@ -17,4 +17,5 @@ Likert Factor Levels
 }
 \examples{
 gedsb_likert_factor_levels()
+
 }

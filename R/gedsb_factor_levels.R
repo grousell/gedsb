@@ -1,6 +1,6 @@
 #' Likert Factor Levels
 #'
-#' @param ...
+#' @param x
 #'
 #' @return
 #' Vector of factor, with levels "Strongly Disagree", "Disagree", "Neither Agree or Disagree", "Agree", "Strongly Agree"
@@ -8,9 +8,11 @@
 #'
 #' @examples
 #' gedsb_likert_factor_levels()
+#'
+
 gedsb_likert_factor_levels <- function (x){
 
-  x <- forcats::as_factor(x,
+  x <- readr::parse_factor(x,
                           levels = c ("Strongly Disagree",
                                       "Disagree",
                                       "Neither Agree or Disagree",
@@ -20,3 +22,4 @@ gedsb_likert_factor_levels <- function (x){
 
   return (x)
 }
+
