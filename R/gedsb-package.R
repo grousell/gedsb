@@ -12,6 +12,7 @@
 #' @importFrom rlang .data
 #' @importFrom tidyr pivot_longer
 #' @importFrom tidyselect everything
+#' @importFrom utils download.file
 #' @importFrom utils head
 #' @importFrom utils read.table
 #' @importFrom utils write.csv

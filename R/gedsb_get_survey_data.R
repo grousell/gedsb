@@ -1,5 +1,16 @@
 
 
+#' Get Survey Data
+#' A function to download data from Snap Surveys
+#'
+#' @param survey_name The name of survey to be used, preferable snake case (e.g. my_survey)
+#' @param url  URL from the Analyse tab on Snap Surveys.
+#'
+#' @return .txt file, and two .csv files. One for survey data, one with a Data Dictionary
+#'
+#' @examples
+#' # gedsb_get_survey_data(survey_name, url)
+#'
 gedsb_get_survey_data <- function (survey_name, url){
   httr::GET(url,
             httr::authenticate("grousell", keyring::key_get("SnapSurveys", "grousell")),
