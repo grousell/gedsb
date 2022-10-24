@@ -1,0 +1,50 @@
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{fancyhdr} %package for fancy headers
+\usepackage{color} %allows me to save colors
+\usepackage{anysize} %%For use with marginsize
+\usepackage{wallpaper} %%For ULCornerWallPaper - headers and footers
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{hyphenat}
+\usepackage{geometry}
+\usepackage{draftwatermark}
+
+\setmainfont[Ligatures=TeX]{Optima}
+\setlength{\headheight}{15pt}
+\marginsize{1.5cm}{1.5cm}{1cm}{2cm} %%Left, Right, Top,BOttom
+\hyphenpenalty=10000
+
+\definecolor {MyBlue}{cmyk}{.95,.75,.05,0}
+\definecolor{gedsbGreen2}{HTML}{8CE079}
+\definecolor{gedsbGreen}{HTML}{59AD46}
+\definecolor{gedsbBlue}{HTML}{04559F}
+\definecolor{gedsbBlue2}{HTML}{51A2EC}
+
+\pagestyle{fancy}
+
+\lhead{} %makes right header %requires pagestyle{fancy}
+\rfoot{Page \thepage}
+\cfoot {\includegraphics[height=1cm]{images/LearnLeadInspire_Bullets_Horizontal}}
+
+\setlength{\footskip}{60.3164pt}
+
+\newenvironment{cols}[1][]{}{}
+
+\newenvironment{col}[1]{\begin{minipage}{#1}\ignorespaces}{%
+\end{minipage}
+\ifhmode\unskip\fi
+\aftergroup\useignorespacesandallpars}
+
+\def\useignorespacesandallpars#1\ignorespaces\fi{%
+#1\fi\ignorespacesandallpars}
+
+\makeatletter
+\def\ignorespacesandallpars{%
+  \@ifnextchar\par
+    {\expandafter\ignorespacesandallpars\@gobble}%
+    {}%
+}
+\makeatother
+
+\AtBeginDocument{\let\maketitle\relax}
+

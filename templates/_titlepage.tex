@@ -1,0 +1,23 @@
+% This is a combination of Pandoc templating and LaTeX
+% Pandoc templating https://pandoc.org/MANUAL.html#templates
+% See the README for help
+
+% $if(titlepage-geometry)$
+% \newgeometry{$for(titlepage-geometry)$$titlepage-geometry$$sep$,$endfor$}
+% $endif$
+% \begin{minipage}[b][\textheight][s]{0.3\textwidth}
+% \raggedright
+% \vspace{5cm}
+% % background image
+% $if(title-bg-image)$
+% \This$if(title-bg-location)$$title-bg-location$$else$UL$endif$CornerWallPaper{$if(title-bg-size)$$title-bg-size$$else$0.5$endif$}{$title-bg-image$}
+% $endif$
+% \end{minipage}
+% \begin{minipage}[b][\textheight][s]{0.7\textwidth}
+% % Title and subtitle
+% {\huge\bfseries\nohyphens{$title$}}\\[1\baselineskip]
+% $if(subtitle)${\large{$subtitle$}}\\[4\baselineskip]$endif$
+% \end{minipage}
+% 
+% 
+% \restoregeometry
