@@ -8,7 +8,7 @@ Converts a character vector of "Strongly Disagree",  "Disagree", "Neither Agree 
 gedsb_likert_factor_levels(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{A character vector}
 }
 \value{
 Vector of factors with levels "Strongly Disagree",  "Disagree", "Neither Agree or Disagree", "Agree", "Strongly Agree"

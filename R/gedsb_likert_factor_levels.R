@@ -2,7 +2,7 @@
 #' Likert Factor Levels
 #' Converts a character vector of "Strongly Disagree",  "Disagree", "Neither Agree or Disagree", "Agree", "Strongly Agree" to ordered factors.
 #'
-#' @param x
+#' @param x A character vector
 #'
 #' @return
 #' Vector of factors with levels "Strongly Disagree",  "Disagree", "Neither Agree or Disagree", "Agree", "Strongly Agree"

@@ -7,13 +7,13 @@
 gedsb_summary_table(df, group_1, group_2, ...)
 }
 \arguments{
-\item{df}{}
+\item{df}{A dataframe}
 
-\item{group_1}{}
+\item{group_1}{The first grouping variable}
 
-\item{group_2}{}
+\item{group_2}{The second grouping variable (optional)}
 
-\item{...}{}
+\item{...}{Addtional arguments}
 }
 \value{
 \link[tibble:tibble-package]{A tibble} with columns for \code{group_1}, \code{group_2},
@@ -23,8 +23,8 @@ gedsb_summary_table(df, group_1, group_2, ...)
 This function will create a one or two variable summary table with percentages
 }
 \examples{
-dat <- palmerpenguins::penguins
-gedsb_summary_table (dat, species)
-gedsb_summary_table (dat, species, sex)
+# dat <- palmerpenguins::penguins
+# gedsb_summary_table (dat, species)
+# gedsb_summary_table (dat, species, sex)
 
 }

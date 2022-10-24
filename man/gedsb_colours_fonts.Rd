@@ -7,7 +7,7 @@
 gedsb_colours_fonts(...)
 }
 \arguments{
-\item{...}{}
+\item{...}{Additional arguments}
 }
 \value{
 R objects with names Hex colours for GEDSB visual identity
@@ -16,6 +16,6 @@ R objects with names Hex colours for GEDSB visual identity
 gedsb_colours
 }
 \examples{
-gedsb_colours_fonts()
+# gedsb_colours_fonts()
 
 }

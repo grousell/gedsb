@@ -1,14 +1,14 @@
 
 #' gedsb_colours
 #'
-#' @param ...
+#' @param ... Additional arguments
 #'
 #' @return
 #' R objects with names Hex colours for GEDSB visual identity
 #' @export
 #'
 #' @examples
-#' gedsb_colours_fonts()
+#' # gedsb_colours_fonts()
 #'
 
 gedsb_colours_fonts <- function (...){

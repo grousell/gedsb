@@ -8,7 +8,7 @@ Converts a character vector of "1 - None",  "2", "3", "4", "5 - A Great Deal" to
 gedsb_understanding_factor_levels(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{A character vector}
 }
 \value{
 Vector of factors with levels "1 - None",  "2", "3", "4", "5 - A Great Deal" to ordered factors.
@@ -18,5 +18,5 @@ Understanding Factor Levels
 Converts a character vector of "1 - None",  "2", "3", "4", "5 - A Great Deal" to ordered factors.
 }
 \examples{
-gedsb_understanding_factor_levels(x)
+# gedsb_understanding_factor_levels(x)
 }
