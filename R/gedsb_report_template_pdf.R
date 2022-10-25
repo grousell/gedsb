@@ -31,11 +31,14 @@ gedsb_report_template_pdf <- function (report_name){
   }
 
   # Download GEDSB images ----
+
   download.file("https://raw.githubusercontent.com/grousell/gedsb/master/templates/images/LearnLeadInspire_Bullets_Horizontal.png",
-                destfile = "images/LearnLeadInspire_Bullets_Horizontal.png")
+                destfile = "images/LearnLeadInspire_Bullets_Horizontal.png",
+                mode = "wb")
 
   download.file("https://raw.githubusercontent.com/grousell/gedsb/master/templates/images/LearnLeadInspire_FullLogo.png",
-                destfile = "images/LearnLeadInspire_FullLogo.png")
+                destfile = "images/LearnLeadInspire_FullLogo.png",
+                mode = "wb")
 
   }
 
