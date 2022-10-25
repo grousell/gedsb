@@ -35,7 +35,7 @@ gedsb_report_template_pdf <- function (report_name){
                 destfile = "images/LearnLeadInspire_Bullets_Horizontal.png")
 
   download.file("https://raw.githubusercontent.com/grousell/gedsb/master/templates/images/LearnLeadInspire_FullLogo.png",
-                destfile = "images/LearnLeadInspire_Bullets_Horizontal.png")
+                destfile = "images/LearnLeadInspire_FullLogo.png")
 
   }
 
