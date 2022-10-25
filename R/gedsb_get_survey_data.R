@@ -17,7 +17,8 @@ gedsb_get_survey_data <- function (survey_name, url){
   httr::GET(url,
             httr::authenticate("grousell", keyring::key_get("SnapSurveys", "grousell")),
             httr::write_disk (here::here(glue::glue ("Data/{survey_name}.txt")),
-                              overwrite = TRUE)
+                              overwrite = TRUE),
+            httr::config(forbid_reuse = 1)
   ) # saves as temporary file
 
   # Load Survey Data --------------------------------------------------------
