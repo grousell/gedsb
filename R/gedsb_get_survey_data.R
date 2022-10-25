@@ -8,6 +8,8 @@
 #'
 #' @return .txt file, and two .csv files. One for survey data, one with a Data Dictionary
 #'
+#' @export
+#'
 #' @examples
 #' # gedsb_get_survey_data(survey_name, url)
 #'

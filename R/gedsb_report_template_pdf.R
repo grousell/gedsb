@@ -4,6 +4,8 @@
 #' @param report_name Name of the report
 #'
 #'
+#' @export
+#'
 #' @examples
 #' # gedsb_report_template_pdf(test_report)
 gedsb_report_template_pdf <- function (report_name){
