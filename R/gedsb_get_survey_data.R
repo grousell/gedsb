@@ -14,6 +14,13 @@
 #' # gedsb_get_survey_data(survey_name, url)
 #'
 gedsb_get_survey_data <- function (survey_name, url){
+
+  if (file.exists("Data")){
+
+  } else {
+    dir.create("Data")
+  }
+
   httr::GET(url,
             httr::authenticate("grousell", keyring::key_get("SnapSurveys", "grousell")),
             httr::write_disk (here::here(glue::glue ("Data/{survey_name}.txt")),
