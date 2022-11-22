@@ -1,0 +1,43 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+output:
+  pdf_document:
+    latex_engine: "xelatex"
+    includes:
+      in_header: "in-header.tex"
+    
+---
+
+```{=tex}
+\thispagestyle{empty}
+\rhead{\bfseries `r rmarkdown::metadata$title`}
+```
+
+```{r setup, include=FALSE}
+
+
+```
+
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.3\\textwidth}"}
+![](images/LearnLeadInspire_FullLogo.png){width="140"}
+:::
+
+::: {.col data-latex="{0.05\\textwidth}"}
+ <!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.6\\textwidth}"}
+# `r rmarkdown::metadata$title`
+## `r rmarkdown::metadata$subtitle`
+:::
+:::
+
+Here is page 1
+
+
+\newpage
+
+Here is page 2
