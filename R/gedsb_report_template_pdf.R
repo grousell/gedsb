@@ -13,8 +13,8 @@ gedsb_report_template_pdf <- function (report_name){
   report_name <- deparse(substitute(report_name))
 
   # Download .qmd file ----
-  download.file("https://raw.githubusercontent.com/grousell/gedsb/master/templates/gedsb_report_template.rmd",
-                destfile = glue::glue ("{report_name}.qmd")
+  download.file("https://raw.githubusercontent.com/grousell/gedsb/master/templates/gedsb_report_template.Rmd",
+                destfile = glue::glue ("{report_name}.rmd")
   )
 
   # Download .tex template ----
