@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples gedsb_bar_plot_theme()
-gedsb_bar_plot_theme <- function () {
+gedsb_ggplot_theme <- function () {
 
   font <- "Montserrat"
 
