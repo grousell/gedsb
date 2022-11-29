@@ -54,7 +54,8 @@ gedsb_ggplot_theme <- function () {
     colour = "black",
     size = 10),
   legend.position = ("bottom"),
-  legend.title = ggplot2::element_blank()
+  legend.title = ggplot2::element_blank(),
+  legend.key = element_blank()
   )
 }
 
