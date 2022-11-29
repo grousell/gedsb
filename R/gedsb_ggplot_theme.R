@@ -29,21 +29,21 @@ gedsb_bar_plot_theme <- function () {
   panel.grid.minor.x = ggplot2::element_line(colour = "NA"),
 
   axis.title.x = ggplot2::element_text (
-    colour = "black", size = 12
+    colour = "black", size = 13
     ),
   axis.title.y = ggplot2::element_text (
     colour = "black",
-    size = 14,
+    size = 13,
     angle = 90
   ),
   axis.text.x = ggplot2::element_text (
     colour = "black",
-    size = 12,
+    size = 11,
     angle = 0
   ),
   axis.text.y = ggplot2::element_text (
     colour = "black",
-    size = 12,
+    size = 11,
     hjust = 1
   ),
 
@@ -54,7 +54,7 @@ gedsb_bar_plot_theme <- function () {
     colour = "black",
     size = 10),
   legend.position = ("bottom"),
-  legend.title = ggplot2::element_text(colour = "black")
+  legend.title = ggplot2::element_blank()
   )
 }
 
